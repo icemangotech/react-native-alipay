@@ -71,8 +71,14 @@ RCT_EXPORT_METHOD(pay:(NSString *)orderInfo
                   resolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject) {
     self.payOrderResolve = resolve;
+    __weak __typeof__(self) weakSelf = self;
+    
     [AlipaySDK.defaultService payOrder:orderInfo fromScheme:self.appScheme callback:^(NSDictionary *resultDic) {
-//        resolve(resultDic);
+        // 如果没有安装支付宝，会调用 SDK 内置 WebView，此时结果由此返回
+        if (weakSelf.payOrderResolve) {
+            weakSelf.payOrderResolve(resultDic);
+            weakSelf.payOrderResolve = nil;
+        }
     }];
 }
 

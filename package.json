@@ -4,9 +4,7 @@
   "description": "Alipay SDK for React Native.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "jest",
-    "build": "yarn tsc",
-    "prepare": "yarn build"
+    "test": "jest"
   },
   "repository": {
     "type": "git",

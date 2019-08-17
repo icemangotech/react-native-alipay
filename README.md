@@ -18,7 +18,6 @@ Native AlipaySDK library ([download page](https://docs.open.alipay.com/54/104509
 - [x] 快捷登录授权（ https://docs.open.alipay.com/218/105327/ ）
 - [x] APP支付（ https://docs.open.alipay.com/204/105465/ ）
 - [x] 手机网站转APP支付（ https://docs.open.alipay.com/204/105695/ ）
-- [x] 参数签名（ https://docs.open.alipay.com/291/106118/ ）
 
 ## Requirement
 
@@ -174,7 +173,7 @@ If you want to do client side signature instead of server side (not recommend), 
 - `object` {Object} Object to be signed. The `object.sign_type` can specify `RSA` (default) or `RSA2`.
 - `privateKey` {String} Private key in `PKCS#1` or `PKCS#8` format.
 
-Note: 
+Note:
 `PKCS#1` private key should have wrapped with `-----BEGIN RSA PRIVATE KEY-----` and `-----END RSA PRIVATE KEY-----`
 `PKCS#8` private key should have wrapped with `-----BEGIN PRIVATE KEY-----` and `-----END PRIVATE KEY-----`
 

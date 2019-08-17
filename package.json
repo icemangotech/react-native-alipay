@@ -1,35 +1,36 @@
 {
   "name": "react-native-alipay",
-  "version": "0.2.6",
-  "description": "Alipay SDK for React Native. Support RN >= 0.47.",
-  "main": "index.js",
+  "version": "0.3.0",
+  "description": "Alipay SDK for React Native.",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "yarn tsc",
+    "prepare": "yarn build"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/0x5e/react-native-alipay.git"
+    "url": "git+ssh://git@github.com/icemangotech/react-native-alipay.git"
   },
-  "types": "./index.d.ts",
+  "types": "lib/index.d.ts",
   "keywords": [
     "alipay",
     "react-native"
   ],
-  "author": "gaosen <0x5e@sina.cn>",
+  "author": "phecda <szp12345141@gmail.com>",
+  "contributors": [
+    "gaosen <0x5e@sina.cn>"
+  ],
   "license": "MIT",
   "peerDependencies": {
     "react-native": ">=0.20"
   },
-  "homepage": "https://github.com/0x5e/react-native-alipay",
+  "homepage": "https://github.com/icemangotech/react-native-alipay",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-jest": "^21.2.0",
     "jest": "^21.2.1",
     "query-string": "^5.0.0",
     "react-native": "^0.20.0"
-  },
-  "dependencies": {
-    "buffer": "^5.0.8",
-    "jsrsasign": "^8.0.4"
   }
 }

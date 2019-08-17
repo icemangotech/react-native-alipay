@@ -3,13 +3,6 @@
 #
 .DS_Store
 
-# node.js
-#
-node_modules/
-npm-debug.log
-yarn-error.log
-  
-
 # Xcode
 #
 build/
@@ -29,7 +22,6 @@ DerivedData
 *.ipa
 *.xcuserstate
 project.xcworkspace
-      
 
 # Android/IntelliJ
 #
@@ -38,9 +30,21 @@ build/
 .gradle
 local.properties
 *.iml
+lib/android/src/main/gen
 
+android/gradle
+android/gradlew
+android/gradlew.bat
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+lib/
 # BUCK
 buck-out/
 \.buckd/
 *.keystore
-      

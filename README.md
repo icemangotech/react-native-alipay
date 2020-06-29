@@ -5,7 +5,7 @@
 Native AlipaySDK library ([download page](https://docs.open.alipay.com/54/104509)):
 
 - iOS: v15.7.6 (2020.04.28)
-- Android: v15.5.9 (2018.11.26)
+- Android: v15.7.6 (2020.05.27)
 
 ## Features
 
